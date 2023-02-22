@@ -75,7 +75,7 @@ int find_builtin(info_t *info)
 			break;
 		}
 	return (built_in_ret);
-i}
+}
 
 /**
  * find_cmd - finds a command in PATH
@@ -99,7 +99,7 @@ void find_cmd(info_t *info)
 			k++;
 	if (!k)
 		return;
-ii
+
 	path = find_path(info, _getenv(info, "PATH="), info->argv[0]);
 	if (path)
 	{
