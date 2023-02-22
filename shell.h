@@ -37,11 +37,11 @@
 extern char **environ;
 
 /**
-   * struct liststr - singly linked list
-    * @num: the number field
-     * @str: a string
-      * @next: points to the next node
-       */
+  * struct liststr - singly linked list
+  * @num: the number field
+  * @str: a string
+  * @next: points to the next node
+  */
 typedef struct liststr
 {	int num;
 	char *str;
@@ -97,10 +97,10 @@ typedef struct passinfo
 
 
 /**
-   * struct builtin - contains a builtin string and related function
-    * @type: the builtin command flag
-     * @func: the function
-      */
+  * struct builtin - contains a builtin string and related function
+  * @type: the builtin command flag
+  * @func: the function
+  */
 typedef struct builtin
 {
 	char *type;
@@ -229,5 +229,3 @@ int replace_vars(info_t *);
 int replace_string(char **, char *);
 
 #endif
-
-
